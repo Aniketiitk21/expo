@@ -2,6 +2,9 @@
 export type VideoThumbnailsResult = {
   /**
    * URI to the created image (usable as the source for an Image/Video element).
+   * On web, this is returned as a JPEG data URL.
+   *
+   * @platform web
    */
   uri: string;
   /**
@@ -27,6 +30,10 @@ export type VideoThumbnailsOptions = {
   time?: number;
   /**
    * In case `sourceFilename` is a remote URI, `headers` object is passed in a network request.
+   * On web, remote sources with headers are fetched into a temporary Blob before thumbnail
+   * extraction.
+   *
+   * @platform web
    */
   headers?: Record<string, string>;
 };

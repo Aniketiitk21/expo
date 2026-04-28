@@ -8,6 +8,8 @@
 
 ### 🎉 New features
 
+- [web] Add support for generating video thumbnails on web. ([#PR](https://github.com/expo/expo/pull/PR) by [@USERNAME](https://github.com/USERNAME))
+
 ### 🐛 Bug fixes
 
 ### 💡 Others
